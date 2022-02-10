@@ -6,8 +6,12 @@ import * as serviceWorker from "./serviceWorker";
 import Expenses from "./routes/expenses";
 import Invoices from "./routes/invoices";
 import Person from "./routes/person";
+import User from "./routes/user";
+import axios from 'axios';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+React.Component.prototype.$axios = axios;
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
@@ -15,7 +19,8 @@ render(
       <Route path="/" element={<App />}>
         <Route path="expenses" element={<Expenses />} />
         <Route path="invoices" element={<Invoices />} />
-        <Route path="person" element={<Person />} />
+        <Route path="Person" element={<Person />} />
+        <Route path="User" element={<User />} />
       </Route>
     </Routes>
   </BrowserRouter>,

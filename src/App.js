@@ -9,18 +9,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
         <div>
+
+          {/* 反斜杠 */}
           <Link to="/invoices">Invoices</Link> |{" "}
-          <Link to="/expenses">Expenses</Link>
+          <Link to="/expenses">Expenses</Link>|{" "}
+          <Link to="/user">user</Link>|{" "}
           <NavLink to="/person">Person</NavLink>
         </div>
       </header>
