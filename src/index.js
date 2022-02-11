@@ -7,12 +7,15 @@ import Expenses from "./routes/expenses";
 import Invoices from "./routes/invoices";
 import Person from "./routes/person";
 import User from "./routes/user";
-import axios from 'axios';
+import Count from "./routes/count";
+import axios from "axios";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 React.Component.prototype.$axios = axios;
 const rootElement = document.getElementById("root");
+
+// 注册路由
 render(
   <BrowserRouter>
     <Routes>
@@ -21,6 +24,11 @@ render(
         <Route path="invoices" element={<Invoices />} />
         <Route path="Person" element={<Person />} />
         <Route path="User" element={<User />} />
+        <Route path="Count">
+          {/* //url传参 */}
+          <Route path=":id" element={<Count />} /> 
+          <Route path="me" element={<Count />} />
+        </Route>
       </Route>
     </Routes>
   </BrowserRouter>,

@@ -39,3 +39,12 @@
 .right{
   color: black;
 }
+
+.active-nav-item{
+  background: orange;
+
+}
+
+.nav-item{
+  padding: 10px;
+}

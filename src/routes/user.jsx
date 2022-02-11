@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
+export class User extends Component {
 
-export class FileName extends Component {
-
-  
   state = {
     userData: null,
     mockData: null,
@@ -39,7 +37,7 @@ export class FileName extends Component {
   }
 
   render () {
-    console.log('this', this);
+    console.log(this.createSearchParams);
     const { userData } = this.state;
     if (userData) {
       return userData.map(item => <div key={item.id}>{item.email}</div>)
@@ -48,4 +46,4 @@ export class FileName extends Component {
   }
 }
 
-export default FileName
+export default User
