@@ -8,6 +8,7 @@ import Invoices from "./routes/invoices";
 import Person from "./routes/person";
 import User from "./routes/user";
 import Count from "./routes/count";
+import Message from "./routes/message";
 import axios from "axios";
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -25,6 +26,7 @@ render(
         <Route path="invoices" element={<Invoices />} />
         <Route path="Person" element={<Person />} />
         <Route path="User" element={<User />} />
+        <Route path="Message/:province/:city" element={<Message />} />
         <Route path="Count">
           {/* //url传参 */}
           <Route path=":id" element={<Count />} />
