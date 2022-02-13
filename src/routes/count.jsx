@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation, useParams, useSearchParams } from 'react-router-dom'
+import { Button } from 'antd';
 
 // React Router V6已经不直接支持在类组件中获取props，尽量使用函数式组件。
 export default function Example () {
@@ -25,9 +26,9 @@ export default function Example () {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
+      <Button onClick={() => setCount(count + 1)}>
         Click me
-      </button>
+      </Button>
     </div>
   );
 }

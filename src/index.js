@@ -10,6 +10,7 @@ import User from "./routes/user";
 import Count from "./routes/count";
 import Message from "./routes/message";
 import axios from "axios";
+// import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
