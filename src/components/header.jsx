@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button } from 'antd';
+import { Button, Space } from 'antd';
 export default class header extends Component {
     goBack () {
 
@@ -7,12 +7,17 @@ export default class header extends Component {
     render () {
         console.log('header组件收到的prop', this.props);
         return (
-            <div style={{padding:'20px'}}>
+            <div style={{ padding: '20px' }}>
                 <h3>React Router Demo</h3>
-                <Button onClick={this.goBack}>后退</Button>
-                <Button onClick={this.goFoward}>前进</Button>
-                <div>
-                <Button type='primary'>自定义按钮</Button>
+                <Space>
+                    <Button onClick={this.goBack}>后退</Button>
+                    <Button onClick={this.goFoward}>前进</Button>
+                </Space>
+                <div style={{ padding: '20px 0' }}>
+                    <Space>
+                        <Button type='primary'>自定义按钮1</Button>
+                        <Button type='primary'>自定义按钮2 -- 读取customize.less</Button>
+                    </Space>
                 </div>
             </div>
 
