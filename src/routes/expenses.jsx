@@ -16,7 +16,7 @@ export default function Invoices () {
       {/* React Router V6 navigate ---> 编程式路由导航 */}
       {/* 注意params参数需要声明接收 */}
       {/* 备注：React Router旧版本使用this.props.history.push/replace 方式实现编程式路由跳转  */}
-      <Button onClick={() => { navigate('/message/hunan/hengyang/?borthDate=20210803', naviParams) }}>点击跳转到消息列表</Button>
+      <Button onClick={() => { navigate('/message/hunan/hengyang/China-JiePai?borthDate=20210803', naviParams) }}>点击跳转到消息列表</Button>
     </main>
   );
 }

@@ -27,7 +27,7 @@ render(
         <Route path="invoices" element={<Invoices />} />
         <Route path="Person" element={<Person />} />
         <Route path="User" element={<User />} />
-        <Route path="Message/:province/:city" element={<Message />} />
+        <Route path="Message/:province/:city/:from-:to" element={<Message />} />
         <Route path="Count">
           {/* //url传参 */}
           <Route path=":id" element={<Count />} />
