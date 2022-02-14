@@ -5,7 +5,7 @@ import "./App.css";
 // import { Outlet, Link, NavLink } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Header from "./components/header.jsx"; //jsx不再支持小写组件名
-import MyNavLink from "./components/nav";
+import MyNavLink from "./components/Nav";
 function App() {
   return (
     <div className="App">
@@ -27,6 +27,7 @@ function App() {
           我是count组件
         </MyNavLink>
         <MyNavLink to="/person">Person</MyNavLink>
+        <MyNavLink to="/tosum">求和</MyNavLink>
       </div>
       <Outlet />
     </div>

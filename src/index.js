@@ -9,6 +9,7 @@ import Person from "./routes/person";
 import User from "./routes/user";
 import Count from "./routes/count";
 import Message from "./routes/message";
+import ToSum from "./routes/to-sum";
 import axios from "axios";
 // import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
@@ -33,6 +34,7 @@ render(
           <Route path=":id" element={<Count />} />
           <Route path="me" element={<Count />} />
         </Route>
+        <Route path="ToSum" element={<ToSum />} />
       </Route>
       {/* v6版本重定向方案 https://segmentfault.com/a/1190000040956450 */}
       <Route path="*" element={<Navigate to="/invoices" />} />

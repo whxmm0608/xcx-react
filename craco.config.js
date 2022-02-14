@@ -1,16 +1,29 @@
 /* craco.config.js */
 
 const CracoAntDesignPlugin = require("craco-antd");
+const CracoAlias = require("craco-alias");
+
 const path = require("path");
 module.exports = {
-  webpack: {
-    // 别名
-    alias: {
-      "@": path.resolve("src"),
-      "@utils": path.resolve("src/utils"),
-    },
-  },
+  // webpack: {
+  //   // 别名
+  //   alias: {
+  //     "@": path.resolve("src"),
+  //     "@utils": path.resolve("src/utils"),
+  //   },
+  // },
   plugins: [
+    {
+      plugin: CracoAlias,
+      options: {
+        source: "options",
+        baseUrl: "./",
+        aliases: {
+          "@": path.resolve("src"),
+          "@utils": path.resolve("src/utils"),
+        },
+      },
+    },
     {
       plugin: CracoAntDesignPlugin,
       options: {
