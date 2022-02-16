@@ -28,6 +28,7 @@ function App() {
         </MyNavLink>
         <MyNavLink to="/person">Person</MyNavLink>
         <MyNavLink to="/tosum">求和</MyNavLink>
+        <MyNavLink to="/provide">context/provide</MyNavLink>
       </div>
       <Outlet />
     </div>
