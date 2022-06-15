@@ -12,6 +12,9 @@ import Count from "./routes/count";
 import Message from "./routes/message";
 import ToSum from "./routes/to-sum";
 import Provide from "./routes/provide";
+import Hooks from "./routes/hooks";
+import Hooks2 from "./routes/hooks2";
+import Hooks3 from "./routes/hooks3";
 import axios from "axios";
 // import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 
@@ -29,6 +32,9 @@ render(
     {/* Routes类似React Router V5的Switch */}
     <Routes>
       <Route path="/" element={<App />}>
+        <Route path="hooks" element={<Hooks />} />
+        <Route path="hooks2" element={<Hooks2 />} />
+        <Route path="hooks3" element={<Hooks3 />} />
         <Route path="expenses" element={<Expenses />} />
         <Route path="invoices" element={<Invoices a={1} />} />
         <Route path="Person" element={<Person />} />
