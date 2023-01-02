@@ -12,11 +12,11 @@
     "axios": "^0.25.0",
     "babel-plugin-import": "^1.13.3",
     "craco-antd": "^1.19.0",
-    "craco-less": "1.16.0",
+    "craco-less": "1.20.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "^3.2.0",
+    "react-scripts": "^5.0.1",
     "redux": "^4.1.2",
     "redux-thunk": "^2.4.1"
   },
